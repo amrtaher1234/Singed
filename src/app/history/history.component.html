@@ -1,0 +1,20 @@
+
+
+<h3>The history list of previous api calls</h3>
+<div *ngFor="let ins of historyData" class="card floating" style="width: 18rem;">
+    <div  class="card-body">
+      <h5 class="card-title">Location : {{ins['country name']}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{ins['location']}}</h6>
+      <h6 class="card-subtitle mb-2 text-muted">{{ins['carrier']}}</h6>
+      <h6 class="card-subtitle mb-2 text-muted">{{ins['international format']}}</h6>
+      <h6 class="card-subtitle mb-2 text-muted">{{ins['line type']}}</h6>
+      <h6 class="card-subtitle mb-2 text-muted">{{ins['valid']}}</h6>
+      <h6 class="card-subtitle mb-2 text-muted">{{ins['country prefix']}}</h6>
+      
+      
+      <p class="card-text">..</p>
+      <!-- <p>{{ins['line type']</p>
+      <p>{{ins['local format']</p> -->
+      </div>
+  </div>
+  <br> <br>  <br> <br>  <br> <br>

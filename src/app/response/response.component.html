@@ -1,0 +1,28 @@
+
+
+
+<br>
+<br><br>
+<div *ngIf='urldata'>
+<h3>Data of your number</h3>
+
+
+
+<div *ngIf='urldata.valid == 1 || urldata.valid == true'> 
+  
+  <ul class="list-group list-group-flush" >
+  
+  <li  class="list-group-item">Valid Value : {{urldata.valid}}</li>
+  <li  class="list-group-item">Country Name : {{urldata['country name']}}</li>
+  <li  class="list-group-item">Country Prefix : {{urldata['country prefix']}}</li>
+  <li  class="list-group-item">Location : {{urldata.location}}</li>
+  <li  class="list-group-item">Local Format : {{urldata['local format']}}</li>
+  <li  class="list-group-item">Line Type : {{urldata['line type']}}</li>
+
+</ul>
+</div> 
+<div *ngIf = 'urldata.valid ==0 || urldata.valid ==false'>
+  <p>the number you have entered is not valid.</p>
+</div>
+</div>
+

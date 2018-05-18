@@ -1,0 +1,23 @@
+<div class="form-signin">
+  <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+  <h1 class="h3 mb-3 font-weight-normal">Enter Your Data</h1>
+  <label for="number" class="sr-only">Number</label>
+  <input    [(ngModel)]="phonenumber" type="number" id="number" class="form-control sr" placeholder="Phone Number" required #name="ngModel">    
+
+  <div [hidden]="name.valid || name.pristine"
+     class="alert alert-danger">
+  The filed is either empty or it is a wrong  number format.
+</div>
+
+<br>
+  <button (click) = 'callAPI(phonenumber)'  class="btn btn-lg btn-primary btn-block" >Submit your number</button>
+ 
+
+</div>
+<!-- <form >
+<input type="text" class="form-control" id="name"
+  required
+  [(ngModel)]="phonenumber" name="name"
+  #spy>
+</form> -->
+<app-response [urldata]="formated_data"></app-response> 
